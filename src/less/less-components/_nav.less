@@ -1,0 +1,116 @@
+.main-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: @grey-main;
+}
+
+.container_main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 81px;
+    max-width: 1285px;
+}
+
+.burger-button {
+    display: none;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.burger-button__image {
+    width: 48px;
+    height: 25px;
+}
+
+.burger-button__image path {
+    pointer-events: none;
+}
+
+/* burger-menu-start */
+
+.burger-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 19px 65px 19px 14px;
+    min-width: 133px;
+    min-height: 268px;
+    background-color: @grey-main;
+    opacity: 0;
+    transform: translate(-599px, 0);
+    transition: 0.3s;
+}
+
+.burger-menu_active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.burger-menu__list-item {
+    margin-bottom: 23px;
+}
+
+.burger-menu__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @white-main;
+
+    &:hover {
+        text-decoration: underline;
+        color: @orange-main;
+    }
+}
+
+.burger-menu__close-button {
+    position: absolute;
+    right: 22.33px;
+    top: 17px;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-button__image {
+    width: 27px;
+    height: 27px;
+}
+
+/* burger-menu-end */
+
+.main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.main-nav__list-link {
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @white-main;
+}
+
+.main-nav__button {
+    display: none;
+    padding: 16px 0 12px;
+    min-width: 203px;
+    font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+}

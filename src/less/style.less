@@ -1,0 +1,55 @@
+@import "./_vars";
+@import "./_fonts";
+
+/* * {
+    outline: 1px solid #000;
+} */
+
+body {
+    margin: 0;
+    font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1388px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button_primary {
+    border: 0;
+    text-transform: uppercase;
+    color: @white-main;
+    background-color: @orange-main;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @orange1;
+    }
+
+    &:active {
+        color: @black1;
+        background-color: @orange-main;
+    }
+}
+
+@import "./less-components/_header";
+@import "./less-components/_nav";
+@import "./less-components/_footer";
+@import "./less-components/_modal";
+@import "./_media";

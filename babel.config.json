@@ -1,0 +1,17 @@
+// .babelrc
+{
+  /* "ignore": [
+    "/\/core-js/"
+  ], */
+
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs" : "3",
+        "targets": "ie 11",
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}

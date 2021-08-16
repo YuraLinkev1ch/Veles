@@ -1,0 +1,149 @@
+.modal {
+	--transition-time: 0.3s;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.modal__container {
+	position: relative;
+	display: none;
+	vertical-align: middle;
+	text-align: left;
+	background-color: @white-main;
+	cursor: default;
+}
+
+.modal.is-open {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal__container.modal-open {
+	display: inline-block;
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity var(--transition-time);
+}
+
+.fade.animate-open {
+	opacity: 1;
+	transition: opacity var(--transition-time);
+}
+
+.fadeInUp {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.content {
+	min-height: 200vh;
+}
+
+.disable-scroll {
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 35px;
+	padding-top: 31px;
+	padding-bottom: 32px;
+}
+
+.modal__title {
+	margin-top: 0;
+	margin-bottom: 33px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.modal__name {
+	margin-bottom: 15px;
+	padding: 0 13px;
+	width: 255px;
+	height: 32px;
+	font-size: 10px;
+
+	&::placeholder {
+		font-size: 10px;
+		color: @grey-light;
+	}
+}
+
+.modal__tel {
+	margin-bottom: 15px;
+	padding: 0 13px;
+	width: 255px;
+	height: 32px;
+	font-size: 10px;
+
+	&::placeholder {
+		font-size: 10px;
+		color: @grey-light;
+	}
+}
+
+.modal__textarea {
+	margin-bottom: 20px;
+	padding: 8px 13px;
+	width: 255px;
+	min-height: 76px;
+	font-size: 10px;
+	resize: none;
+
+	&::placeholder {
+		font-size: 10px;
+		color: @grey-light;
+	}
+}
+
+.modal__submit {
+	align-self: flex-start;
+	border: 0;
+	padding: 14px 18px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+	font-weight: 400;
+	font-size: 8px;
+	text-transform: uppercase;
+	color: @white-main;
+	background-color: @orange-main;
+}
