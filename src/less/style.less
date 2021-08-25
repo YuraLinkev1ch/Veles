@@ -1,5 +1,6 @@
 @import "./_vars";
 @import "./_fonts";
+@retina: ~"only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)";
 
 /* * {
     outline: 1px solid #000;
@@ -32,6 +33,7 @@ body {
 
 .button_primary {
     border: 0;
+    font-weight: 700;
     text-transform: uppercase;
     color: @white-main;
     background-color: @orange-main;
@@ -50,6 +52,7 @@ body {
 
 @import "./less-components/_header";
 @import "./less-components/_nav";
+@import "./less-components/_first-screen";
 @import "./less-components/_footer";
 @import "./less-components/_modal";
 @import "./_media";

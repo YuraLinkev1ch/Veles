@@ -15,8 +15,8 @@
     <div class="modal__container" data-target="first">
         <form class="modal-content">
             <h2 class="modal__title">Форма обратной связи</h2>
-            <input class="modal__name" type="text" placeholder="Имя" required>
-            <input class="modal__tel" type="tel" placeholder="Телефон" required>
+            <input class="modal__name" type="text" placeholder="Имя*" required>
+            <input class="modal__tel" type="tel" placeholder="Телефон*" required>
             <textarea class="modal__textarea" placeholder="Сообщение"></textarea>
             <input class="modal__submit" type="submit" value="Заказать звонок">
         </form>
@@ -40,7 +40,7 @@
                 info@my-domain.ie
             </a>
         </div>
-        <button class="button button_primary header__button modal-btn" data-path="first" data-animation="fade" data-speed="300">
+        <button class="button button_primary header__button modal-btn" data-path="first">
             Заказать звонок
         </button>
     </div>
@@ -130,6 +130,12 @@
         </button>
     </div>
 </nav>
+		<div class="first-screen">
+    <div class="container container_first-screen">
+        <h1 class="first-screen__title">Строительная компания «Велес»</h1>
+        <button class="first-screen__btn-call button button_primary modal-btn" data-path="first" >Оставить заявку</button>
+    </div>
+</div>
 
 		<footer class="footer">
 

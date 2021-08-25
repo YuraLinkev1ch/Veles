@@ -32,7 +32,7 @@ class Modal {
 					let animation = clickedElement.dataset.animation;
 					let speed = clickedElement.dataset.speed;
 					this.animation = animation ? animation : 'fade';
-					this.speed = speed ? parseInt(speed) : 300;
+					this.speed = speed ? parseInt(speed) : 100;
 					this.modalContainer = document.querySelector(`[data-target="${target}"]`);
 					this.open();
 					return;
@@ -72,7 +72,7 @@ class Modal {
 		this.modal.style.setProperty('--transition-time', `${this.speed / 1000}s`);
 		this.modal.classList.add('is-open');
 		this.disableScroll();
-
+		
 		this.modalContainer.classList.add('modal-open');
 		this.modalContainer.classList.add(this.animation);
 
