@@ -1,6 +1,7 @@
 @import "./_vars";
 @import "./_fonts";
 @retina: ~"only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)";
+@ie11fix: ~"all and (-ms-high-contrast: none), (-ms-high-contrast: active)";
 
 /* * {
     outline: 1px solid #000;
@@ -53,6 +54,7 @@ body {
 @import "./less-components/_header";
 @import "./less-components/_nav";
 @import "./less-components/_first-screen";
+@import "./less-components/_services";
 @import "./less-components/_footer";
 @import "./less-components/_modal";
 @import "./_media";

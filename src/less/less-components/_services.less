@@ -1,0 +1,106 @@
+.services {
+    position: relative;
+    width: 100%;
+    background-color: @grey-main;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -25px;
+        display: inline-block;
+        width: 100%;
+        height: 25px;
+        background: url("./../../img/section-arrow.svg") center top no-repeat;
+        background-size: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -94px;
+        display: inline-block;
+        width: 100%;
+        height: 96px;
+        background: url("./../../img/section-arrow.svg") center bottom no-repeat;
+    }
+}
+
+.container_services {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 86px 30px 51px;
+    max-width: 1384px;
+}
+
+.services__title {
+    position: relative;
+    margin-bottom: 20px;
+    width: 421px;
+    min-height: 420px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 72px;
+        top: 44px;
+        display: inline-block;
+        width: 276px;
+        height: 272px;
+        background: url("./../../img/services-decorate-element.svg") top center no-repeat;
+        background-size: cover;
+    }
+}
+
+.services__title-h2 {
+    position: absolute;
+    left: 145px;
+    top: 141px;
+    margin: 0;
+    width: 192px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: @white-main;
+}
+
+.services__card {
+    position: relative;
+    margin-bottom: 20px;
+    width: 420px;
+    min-height: 420px;
+    filter: drop-shadow(3px -3px 4px rgba(0, 0, 0, 0.25));
+}
+
+.services__card-title {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 15px;
+    width: 280px;
+    min-height: 84px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: @white-main;
+    background-color: @grey-main;
+    
+    @media @ie11fix {
+        height: 84px;
+    }
+}
+
+.services__card-image {
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: @grey-light;
+    object-fit: cover;
+}
