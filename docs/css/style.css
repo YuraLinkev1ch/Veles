@@ -1308,9 +1308,6 @@ body {
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active), (max-width: 520px) {
-  .services__title {
-    /* height: auto; */
-  }
   .services__card-title {
     height: 37.8px;
   }
