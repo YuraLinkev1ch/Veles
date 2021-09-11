@@ -1,0 +1,88 @@
+.benefits {
+    position: relative;
+    width: 100%;
+    background-color: @grey-main;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -25px;
+        display: inline-block;
+        width: 100%;
+        height: 25px;
+        background: url("./../../img/section-arrow.svg") center top no-repeat;
+        background-size: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -94px;
+        display: inline-block;
+        width: 100%;
+        height: 96px;
+        background: url("./../../img/section-arrow.svg") center bottom no-repeat;
+    }
+}
+
+.container_benefits {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 103px 30px 108px;
+    max-width: 1384px;
+}
+
+.benefits__title {
+    margin: 0;
+    margin-bottom: 130px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: @white-main;
+}
+
+.benefits__card {
+    margin-bottom: 53px;
+    text-align: center;
+
+    &:nth-of-type(1) {
+        max-width: 321px;
+    }
+
+    &:nth-of-type(2) {
+        max-width: 376px;
+    }
+
+    &:nth-of-type(3) {
+        max-width: 348px;
+    }
+}
+
+.benefits__card-image {
+    margin-bottom: 16px;
+    width: 82px;
+    height: 82px;
+}
+
+.benefits__card-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: @orange-main;
+}
+
+.benefits__card-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: @white-main;
+}
