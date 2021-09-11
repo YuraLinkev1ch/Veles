@@ -59,6 +59,9 @@ body {
   color: rgba(0, 0, 0, 0.25);
   background-color: #FFA800;
 }
+.image-poly {
+  font-family: "object-fit: cover;";
+}
 /* header-start */
 /* ie11 fix for min-height bug start */
 .header {
@@ -453,6 +456,68 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.about-company {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.container_about-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 190px 30px 130px;
+  max-width: 1384px;
+  background: url("../../img/logotype_VELES.png") center no-repeat;
+  background-size: 114% 73%;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .container_about-company {
+    background: url("../../img/logotype_VELES@2x.png") center no-repeat;
+    background-size: 114% 73%;
+  }
+}
+.about-company__image {
+  width: 50%;
+  height: 498px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-filter: drop-shadow(0 4px 52px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 52px rgba(0, 0, 0, 0.25));
+}
+.about-company__card {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 32px;
+  line-height: 42.37px;
+  color: #272727;
+}
+.about-company__card:first-of-type {
+  padding-right: 8%;
+  padding-left: 37px;
+}
+.about-company__card:last-of-type {
+  padding-top: 8%;
+  padding-right: 1%;
+}
+.about-company__card-title {
+  margin-top: 83px;
+  margin-bottom: 38px;
+  font-size: 44px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #272727;
+}
+.about-company__card-text {
+  margin: 0;
+  /* &:first-of-type {
+        padding-right: 8%;
+    } */
+}
+.about-company__card-bold-text {
+  font-weight: 700;
+}
 .modal {
   --transition-time: 0.3s;
   position: fixed;
@@ -786,7 +851,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 610px) {
+@media (max-width: 640px) {
   .container_header {
     padding: 0 8px;
     min-height: 66px;
@@ -1313,5 +1378,164 @@ body {
   }
 }
 /* services-end */
+/* about-company-start */
+@media (max-width: 1200px) {
+  .about-company__image {
+    height: 418px;
+  }
+  .about-company__card {
+    font-size: 28px;
+    line-height: 37.07px;
+  }
+  .about-company__card:first-of-type {
+    padding-right: 6%;
+  }
+  .about-company__card:last-of-type {
+    padding-top: 7%;
+  }
+  .about-company__card-title {
+    margin-top: 83px;
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .container_about-company {
+    padding: 210px 30px 130px;
+    background: url("../../img/logotype_VELES.png") center no-repeat;
+    background-size: 132% 70%;
+  }
+  .about-company__image {
+    height: 318px;
+  }
+  .about-company__card {
+    font-size: 28px;
+    line-height: 37.07px;
+  }
+  .about-company__card:first-of-type {
+    padding-right: 0;
+    padding-bottom: 63px;
+  }
+  .about-company__card:last-of-type {
+    padding-top: 2%;
+  }
+  .about-company__card-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1000px) and only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .container_about-company {
+    background: url("../../img/logotype_VELES@2x.png") center no-repeat;
+    background-size: 132% 70%;
+  }
+}
+@media (max-width: 768px) {
+  .container_about-company {
+    padding: 172px 8px 108px;
+    max-width: 720px;
+  }
+  .about-company__image {
+    height: 222px;
+  }
+  .about-company__image:first-of-type {
+    padding-bottom: 32px;
+  }
+  .about-company__card {
+    font-size: 20px;
+    line-height: 26.48px;
+  }
+  .about-company__card:first-of-type {
+    padding-bottom: 30px;
+    padding-left: 15px;
+  }
+  .about-company__card:last-of-type {
+    padding-top: 13px;
+  }
+  .about-company__card-title {
+    margin-top: 0;
+    margin-bottom: 41px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 560px) {
+  .container_about-company {
+    padding: 95px 8px;
+    max-width: 464px;
+  }
+  .about-company__image {
+    width: 192px;
+    height: 119.06px;
+  }
+  .about-company__image:first-of-type {
+    padding-bottom: 34.94px;
+  }
+  .about-company__card {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 15.46px;
+  }
+  .about-company__card:first-of-type {
+    padding-bottom: 0;
+    padding-left: 10px;
+  }
+  .about-company__card:last-of-type {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  .about-company__card-title {
+    margin: 0;
+    margin-bottom: 27px;
+    min-width: 199px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .container_about-company {
+    position: relative;
+    padding: 95px 8px 30px;
+  }
+  .about-company__image {
+    width: 137px;
+    height: 85px;
+  }
+  .about-company__image:first-of-type {
+    padding-bottom: 20px;
+  }
+  .about-company__card {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 13.25px;
+  }
+  .about-company__card:first-of-type {
+    padding-bottom: 0;
+    padding-left: 10px;
+  }
+  .about-company__card:last-of-type {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  .about-company__card-title {
+    position: absolute;
+    left: 50%;
+    top: 66px;
+    margin: 0;
+    min-width: 199px;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+/* about-company-end */
 
 /*# sourceMappingURL=style.css.map */

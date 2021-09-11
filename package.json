@@ -41,6 +41,7 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-w3c-html-validator": "^2.0.1",
     "nodelist-foreach-polyfill": "^1.2.0",
+    "object-fit-images": "^3.2.4",
     "regenerator-runtime": "^0.13.9",
     "stylelint": "^13.13.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
