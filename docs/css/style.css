@@ -1618,7 +1618,7 @@ body {
     line-height: 20px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .container_about-company {
     position: relative;
     padding: 95px 8px 60px;
@@ -1655,6 +1655,11 @@ body {
     line-height: 16px;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active), (max-width: 400px) {
+  .container_about-company {
+    overflow-x: hidden;
   }
 }
 /* about-company-end */
@@ -1894,11 +1899,6 @@ body {
     margin-bottom: 8px;
     width: 93px;
     height: 48px;
-  }
-}
-@media (max-width: 320px) {
-  .container_partners {
-    background-color: red;
   }
 }
 /* partners-end */
