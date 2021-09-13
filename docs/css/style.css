@@ -1901,6 +1901,14 @@ body {
     height: 48px;
   }
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 320px) {
+  .container_partners {
+    background-color: red;
+  }
+}
+>>>>>>> c9268afe78c686725bbfdcaf0b0681a97ca84813
 /* partners-end */
 
 /*# sourceMappingURL=style.css.map */
