@@ -1,3 +1,26 @@
+/* swiper-initialization-start */
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+/* swiper-initialization-end */
+
 /* burger-menu-toggle-start */
 
 let button = document.querySelector('.burger-button');

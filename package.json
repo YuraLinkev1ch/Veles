@@ -52,6 +52,8 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "fslightbox": "^3.3.0-2",
+    "swiper": "^7.0.5"
   }
 }
