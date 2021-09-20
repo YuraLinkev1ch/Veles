@@ -21,6 +21,30 @@ const swiper = new Swiper('.swiper', {
 
 /* swiper-initialization-end */
 
+/* yandex-maps-config-start */
+
+let center = [55.578981069177374,38.202771000000006];
+
+function init() {
+	let map = new ymaps.Map('contacts-map', {
+		center: center,
+		zoom: 17
+	});
+
+	map.controls.remove('geolocationControl'); 
+  map.controls.remove('searchControl'); 
+  map.controls.remove('trafficControl'); 
+  map.controls.remove('typeSelector'); 
+  map.controls.remove('fullscreenControl'); 
+  map.controls.remove('zoomControl'); 
+  map.controls.remove('rulerControl'); 
+  map.behaviors.disable(['scrollZoom']); 
+}
+
+ymaps.ready(init);
+
+/* yandex-maps-config-end */
+
 /* burger-menu-toggle-start */
 
 let button = document.querySelector('.burger-button');

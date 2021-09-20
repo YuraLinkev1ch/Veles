@@ -1378,6 +1378,18 @@
     }
 }
 
+@media (max-width: 730px) {
+    .projects {
+        &::after {
+            content: "";
+            bottom: -55px;
+            width: 100%;
+            height: 55px;
+            background-size: 200%;
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .projects {
         &::after {
@@ -1462,3 +1474,321 @@
 }
 
 /* projects-end */
+
+/* contacts-start */
+
+@media (max-width: 1450px) {
+    .contacts__inner {
+        flex-direction: row;
+        height: 871px;
+    }
+
+    .contacts__title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .contacts-links {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 425px;
+        max-width: 736px;
+    }
+
+    .contacts-links__map {
+        order: 3;
+        max-width: 100% !important;
+    }
+
+    .contacts__form {
+        order: 2;
+    }
+}
+
+@media (max-width: 1150px) {
+    .container_contacts {
+        padding: 151px 30px 40px;
+    }
+
+    .contacts__inner {
+        height: 1070px;
+    }
+
+    .contacts__title {
+        margin-bottom: 54px;
+    }
+
+    .contacts-links {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        width: 334px;
+    }
+
+    .contacts-links__map {
+        order: 3;
+        height: 465px;
+        max-width: 100% !important;
+    }
+
+    .contacts__form {
+        order: 1;
+        margin: 0;
+        margin-right: 41px;
+        padding: 51px 76px 65px;
+        width: 403px;
+        min-height: 350px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-tel,
+    .contacts__form-textarea {
+        margin-bottom: 11px;
+    }
+
+    .contacts__form-submit {
+        margin-top: 29px;
+        width: 240px;
+        height: 59px;
+        font-size: 18px;
+        line-height: 21.94px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 990px) {
+    .container_contacts {
+        align-items: center;
+        padding: 107px 30px 40px;
+    }
+
+    .contacts__inner {
+        justify-content: center;
+        height: auto;
+    }
+
+    .contacts__title {
+        margin-bottom: 71px;
+        width: auto;
+    }
+
+    .contacts-links {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        width: 458px;
+    }
+
+    .contacts-links__map {
+        order: 3;
+        height: 465px;
+        max-width: 100% !important;
+    }
+
+    .contacts__form {
+        order: 2;
+        margin: 0;
+        margin-top: 48px;
+        padding: 51px 76px 65px;
+        width: 403px;
+        min-height: 350px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-tel,
+    .contacts__form-textarea {
+        margin-bottom: 10px;
+    }
+
+    .contacts__form-submit {
+        margin-top: 29px;
+        width: 240px;
+        height: 59px;
+        font-size: 18px;
+        line-height: 21.94px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 610px) {
+    .container_contacts {
+        padding: 105px 8px 40px;
+    }
+
+    .contacts__title {
+        margin-bottom: 36px;
+        font-size: 20px;
+    }
+
+    .contacts-links {
+        width: 100%;
+    }
+
+    .contacts-link {
+        margin-left: 20px;
+        max-width: inherit;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contacts-links__email {
+        &::before {
+            top: 5px;
+        }
+    }
+
+    .contacts-links__tel {
+        margin-top: 32px;
+
+        &::before {
+            top: 3px;
+        }
+    }
+
+    .contacts-links__address {
+        margin-top: 27px;
+
+        &::before {
+            top: 0;
+        }
+    }
+
+    .contacts-links__map {
+        margin-top: 52px;
+        height: 225px;
+    }
+
+    .contacts__form {
+        margin-right: -8px;
+        margin-left: -8px;
+        padding: 51px 76px 45px;
+        width: 100%;
+        min-height: 350px;
+    }
+
+    .contacts__form-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-tel,
+    .contacts__form-textarea {
+        margin-bottom: 15px;
+    }
+
+    .contacts__form-submit {
+        align-self: center;
+        margin-top: 17px;
+        width: 218px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container_contacts {
+        padding: 56px 8px 40px;
+    }
+
+    .contacts__title {
+        margin-bottom: 29px;
+        font-size: 14px;
+    }
+
+    .contacts-links {
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .contacts-link {
+        margin-left: 20px;
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .contacts-links__email {
+        margin-bottom: 19px;
+
+        &::before {
+            top: 0;
+            width: 14px;
+            height: 10px;
+        }
+    }
+
+    .contacts-links__tel {
+        margin-top: 0;
+        margin-bottom: 19px;
+
+        &::before {
+            top: 0;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    .contacts-links__address {
+        margin-top: 0;
+
+        &::before {
+            top: 0;
+            width: 10px;
+            height: 14px;
+        }
+    }
+
+    .contacts-links__map {
+        margin-top: 52px;
+        height: 132px;
+    }
+
+    .contacts__form {
+        padding: 24px 16px 33px;
+        min-height: 270px;
+    }
+
+    .contacts__form-title {
+        align-self: center;
+        margin-bottom: 16px;
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-tel {
+        height: 28px;
+    }
+
+    .contacts__form-name,
+    .contacts__form-tel,
+    .contacts__form-textarea {
+        margin-bottom: 15px;
+        padding: 0 13px;
+        width: auto;
+        font-size: 12px;
+        line-height: 14.63px;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    .contacts__form-textarea {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        min-height: 58px;
+    }
+
+    .contacts__form-submit {
+        margin-top: 5px;
+        width: 164px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 8px;
+    }
+}
+
+/* contacts-end */
