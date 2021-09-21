@@ -357,6 +357,7 @@ body {
   width: 19px;
   height: 19px;
   background: url("../../img/phone.svg") no-repeat left;
+  background-size: contain;
 }
 .header__email {
   position: relative;
@@ -371,6 +372,7 @@ body {
   width: 22px;
   height: 16px;
   background: url("../../img/mail.svg") no-repeat left;
+  background-size: contain;
 }
 .header__button {
   margin-left: 29px;
@@ -1353,7 +1355,6 @@ body {
     top: 3px;
     width: 13px;
     height: 13px;
-    background: url("../../img/phone-768.svg") no-repeat left;
   }
   .header__email {
     padding-left: 20px;
@@ -1363,7 +1364,6 @@ body {
     top: 6px;
     width: 16px;
     height: 12px;
-    background: url("../../img/mail-768.svg") no-repeat left;
   }
   .header__button {
     display: none;
@@ -1408,7 +1408,6 @@ body {
     top: -2px;
     width: 13px;
     height: 14px;
-    background: url("../../img/phone-480.svg") no-repeat left;
   }
   .header__email {
     padding-left: 21px;
@@ -1418,7 +1417,6 @@ body {
     top: 1px;
     width: 16px;
     height: 12px;
-    background: url("../../img/mail-480.svg") no-repeat left;
   }
 }
 @media (max-width: 470px) {
@@ -1448,7 +1446,6 @@ body {
     top: 0;
     width: 11px;
     height: 10px;
-    background: url("../../img/phone-320.svg") no-repeat left;
   }
   .header__email {
     padding-left: 21px;
@@ -1458,7 +1455,6 @@ body {
     top: 1px;
     width: 11px;
     height: 8px;
-    background: url("../../img/mail-320.svg") no-repeat left;
   }
 }
 /* header-end */
@@ -2570,16 +2566,6 @@ body {
     padding: 51px 56px 65px;
   }
 }
-/* @media @ie11fix, (max-width: 1010px) {
-    .contacts-links {
-        max-width: 400px;
-    }
-
-    .contacts__form {
-        margin-right: 2px;
-        padding: 51px 56px 65px;
-    }
-} */
 @media (max-width: 990px) {
   .container_contacts {
     -webkit-box-align: center;
