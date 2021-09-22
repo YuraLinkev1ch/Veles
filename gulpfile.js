@@ -50,7 +50,9 @@ const styles = () => {
         .pipe(dest('./docs/css/'))
     return src('./src/less/style.less')
         .pipe(gulpif(!isProd, sourcemaps.init()))
-        .pipe(less().on("error", notify.onError()))
+        .pipe(less({
+            relativeUrls: true,
+        }).on("error", notify.onError()))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
             cascade: false,
@@ -151,13 +153,17 @@ const images = () => {
         './src/img/**/*.jpeg'
         ])
         /* .pipe(gulpif(isProd, image())) */
-        .pipe(gulpif(isProd, tiny({
-            key: '0jkY4p7Hcw41s0rB782d0HGvsjr5t3K9',
-            log: true,
-            summarize: true
-        })))
         .pipe(dest('./docs/img'))
 };
+
+const tinypng = () => {
+	return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/**/*.jpg', './src/img/**/*.png'])
+		.pipe(tiny({
+			key: '0jkY4p7Hcw41s0rB782d0HGvsjr5t3K9',
+			log: true
+		}))
+		.pipe(dest('./docs/img'))
+}
 
 const htmlInclude = () => {
     return src(['./src/*.html'])
@@ -231,7 +237,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, lintStyles, styles, fonts, resources, images, svgSprites, watchFiles);
 
-exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify);
+exports.build = series(toProd, fonts, clean, htmlInclude, scripts, styles, fonts, resources, images, svgSprites, htmlMinify, tinypng);
 
 exports.w3c = series(w3cHtmlValidator);
 
