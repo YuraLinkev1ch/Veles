@@ -151,11 +151,11 @@ const images = () => {
         './src/img/**/*.jpeg'
         ])
         /* .pipe(gulpif(isProd, image())) */
-        /* .pipe(gulpif(isProd, tiny({
+        .pipe(gulpif(isProd, tiny({
             key: '0jkY4p7Hcw41s0rB782d0HGvsjr5t3K9',
             log: true,
             summarize: true
-        }))) */
+        })))
         .pipe(dest('./docs/img'))
 };
 
