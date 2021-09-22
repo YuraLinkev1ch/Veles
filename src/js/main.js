@@ -65,7 +65,6 @@ closeButton.addEventListener('click', e => {
 
 closeLinks.forEach(function (entry) {
   entry.addEventListener("click", function (event){
-    event.preventDefault();
     menu.classList.remove('burger-menu_active');
     console.log('closeLink is worked');
   });
@@ -79,3 +78,11 @@ document.addEventListener('click', e => {
 })
 
 /* burger-menu-toggle-end */
+
+/* smooth-scroll-polyfill-settings-start */
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 150
+});
+
+/* smooth-scroll-polyfill-settings-end */

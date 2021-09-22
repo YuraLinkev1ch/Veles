@@ -175,6 +175,7 @@ body {
 }
 .modal__name {
   margin-bottom: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
   padding: 0 13px;
   width: 255px;
   height: 32px;
@@ -202,6 +203,8 @@ body {
 }
 .modal__tel {
   margin-bottom: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.25);
   padding: 0 13px;
   width: 255px;
   height: 32px;
@@ -229,6 +232,7 @@ body {
 }
 .modal__textarea {
   margin-bottom: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
   padding: 8px 13px;
   width: 255px;
   min-height: 76px;
@@ -267,6 +271,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #FFA800;
+  cursor: pointer;
 }
 /* header-start */
 /* ie11 fix for min-height bug start */
@@ -357,7 +362,7 @@ body {
   width: 19px;
   height: 19px;
   background: url("../../img/phone.svg") no-repeat left;
-  background-size: contain;
+  background-size: cover;
 }
 .header__email {
   position: relative;
@@ -372,7 +377,7 @@ body {
   width: 22px;
   height: 16px;
   background: url("../../img/mail.svg") no-repeat left;
-  background-size: contain;
+  background-size: cover;
 }
 .header__button {
   margin-left: 29px;
@@ -1086,7 +1091,7 @@ body {
   width: 23px;
   height: 21px;
   background: url("../../img/map-marker.svg") no-repeat center;
-  background-size: contain;
+  background-size: 92% 100%;
 }
 .contacts-links__map {
   margin-top: 78px;
