@@ -1,8 +1,6 @@
-Сайт строительной компании 
-https://yuralinkev1ch.github.io/Veles/
+Сайт строительной компании:
 
-Репозиторий проекта: 
-https://github.com/YuraLinkev1ch/Veles
+https://yuralinkev1ch.github.io/Veles/
 
 Ссылки на макет:
 
